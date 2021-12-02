@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.FitS">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/roundicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignIn" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".SignUp" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".GridLayout" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity
+            android:name=".WorkoutLayout"
+            android:label="@string/title_activity_workout_layout"
+            android:theme="@style/AppTheme" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".FoodLayout" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".ClassicWorkout" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".FullWorkout" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name="com.example.FitS.FullWorkoutInfo" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".FoodShowActivity" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+        <activity android:name=".EditProfileActivity" android:screenOrientation="portrait" android:clearTaskOnLaunch="true" android:launchMode="singleTask"/>
+
+    </application>
+
+</manifest>
